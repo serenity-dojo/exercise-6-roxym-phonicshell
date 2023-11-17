@@ -5,6 +5,9 @@ public class Cat extends Pet {
     private String favoriteToy;
     private int age;
 
+    public static final String CAT_NOISE = "Meow";
+
+
     public Cat(String name, String favoriteToy, int age) {
         super(name, age);
         this.favoriteToy = favoriteToy;
@@ -22,4 +25,9 @@ public class Cat extends Pet {
     public String play() {
         return "plays with string";
     }
+    @Override
+    public String makeNoise(){
+        return CAT_NOISE;
+    }
+
 }
